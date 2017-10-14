@@ -1,0 +1,375 @@
+body {
+  font-family: 'PT Sans', Verdana, sans-serif;
+  font-size: 18px;
+  color: rgb(42, 45, 64);
+}
+
+h1, h2, h3, header p {
+  font-family: 'PT Serif', Georgia, serif;
+}
+
+h1 {
+  font-size: 2.25em;
+  line-height: 1.25em;
+}
+
+h2 {
+  font-size: 1.5em;
+  line-height: 1.25em;
+}
+
+h3 {
+  font-size: 1.2em;
+  line-height: 1.25em;
+}
+
+p {
+  line-height: 1.25em;
+  opacity: 0.85;
+}
+
+a:hover {
+  cursor: pointer;
+  color: rgb(68, 204, 204);
+  transition: color 200ms linear;
+}
+
+.mobile, nav.mobile {
+  display: none;
+}
+
+.small {
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.btn {
+  background-color: rgb(33, 50, 163);
+  color: white;
+  text-align: center;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: rgb(68, 204, 204);
+  transition: background-color 200ms linear;
+  color: white;
+}
+
+.btn:active {
+  background-color: rgb(162, 227, 230);
+}
+
+.bg-pale {
+  background-color: rgba(68, 204, 204, 0.15);
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.rounded {
+  border-radius: 3px;
+}
+
+
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 64px;
+  z-index: 5;
+  margin: 0;
+  top: 0;
+  box-shadow: 0 3px 10px rgba(9, 13, 37, 0.1);
+}
+
+header .container {
+  padding: 24px;
+}
+
+header p {
+  letter-spacing: 0.05em;
+  margin-left: 0.25em;
+}
+
+header span {
+  color: rgb(68, 204, 204);
+}
+
+header nav a {
+  margin-left: 16px;
+}
+
+header .btn {
+  padding: 8px 16px;
+}
+
+.banner {
+  margin-top: 64px;
+}
+
+.banner .container, .info div.container, .thesis div.container {
+  padding: 32px 24px;
+}
+
+.banner h1, .banner p {
+  margin-bottom: 24px;
+}
+
+.banner a {
+  padding: 8px;
+}
+
+.info div.column, .banner img, .thesis .container div.flex.column {
+  max-width: 60%;
+}
+
+.banner .column, .info aside, .thesis aside {
+  margin-left: 24px;
+}
+
+.info div.column img, video, .courses figure img {
+  width: 100%;
+  height: auto;
+}
+
+.info div.column h1 {
+  margin: 32px 0 24px 0;
+}
+
+.info div.column p:last-child {
+  font-family: 'PT Serif', Georgia, serif;
+  font-style: italic;
+  margin: 24px 0 0 0;
+}
+
+.info figure, .thesis figure {
+  padding: 16px;
+}
+
+.info aside figure img, .thesis aside figure img {
+  max-width: 35%;
+  height: auto;
+  margin-right: 16px;
+}
+
+.info aside figure:first-child {
+  padding-top: 0;
+}
+
+.info aside figcaption p, .courses figure a, .thesis aside figcaption p {
+  margin: 8px 0;
+}
+
+.info aside figcaption .btn {
+  padding: 8px 16px;
+  margin: 0 auto 0 0;
+}
+
+.courses .container {
+  padding: 32px 54px;
+}
+
+.courses h1 {
+  margin-bottom: 16px;
+}
+
+.thesis h1 {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.courses figure {
+  margin: 16px;
+  width: 33%;
+}
+
+.courses figure img {
+  background-size: cover;
+  border-radius: 3px 3px 0 0;
+}
+
+.courses figcaption {
+  padding: 16px 16px 24px 16px;
+}
+
+.thesis div.column div.column h2 {
+  margin: 24px 0 8px 0;
+}
+
+footer {
+  border-top: 1px solid rgba(9, 13, 37, 0.1);
+}
+
+footer .container {
+  padding: 16px 24px;
+}
+
+footer a{
+  margin-left: 16px;
+}
+
+@media only screen and (max-width: 800px) {
+
+  .banner .container, .thesis .container div.flex {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 0 32px 0;
+    align-items: center;
+  }
+
+  .banner img {
+    max-width: 100%;
+    margin: 0 0 24px 0;
+    border-radius: 0;
+  }
+
+  section .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info div.flex div.flex.column, .thesis div.flex div.flex.column {
+    max-width: 80%;
+    margin-bottom: 32px;
+  }
+
+  .info aside, .thesis aside {
+    max-width: 66%;
+    margin-left: 0;
+  }
+
+  .courses .small, .courses p {
+    display: none;
+  }
+
+  .thesis aside {
+    text-align: left;
+  }
+
+}
+
+@media only screen and (max-width: 675px) {
+
+  .desktop, .courses img, .courses a {
+    display: none;
+  }
+
+  .banner h1, .banner p {
+    text-align: left;
+  }
+
+  .info .bg-pale {
+    background-color: white;
+  }
+
+  nav.mobile {
+    display: flex;
+  }
+
+  .banner div.column, .info .container, .courses .container {
+    padding: 16px;
+    max-width: 100%;
+  }
+
+  .info aside, .info aside figure img.mobile {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .info figcaption {
+    width: 100%;
+    margin-top: 24px;
+    margin-left: 16px;
+    margin-bottom: 48px;
+  }
+
+  .info figcaption:last-child {
+    margin-bottom: 32px;
+  }
+
+  .info figure {
+    flex-direction: column;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .info aside figure img.mobile {
+    display: flex;
+    height: auto;
+  }
+
+  .info div.container {
+    padding: 16px;
+    margin: 0;
+  }
+
+  .courses div.justify-between {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .courses h1 {
+    margin-bottom: 8px;
+  }
+
+  .courses figure {
+    width: 100%;
+    margin: 4px 0;
+  }
+
+  .thesis div.container {
+    padding: 0;
+    margin: 0;
+  }
+
+  video {
+    width: 100%;
+    margin: 0;
+  }
+
+  .thesis div.flex div.flex.column {
+    max-width: 100%;
+  }
+
+  .thesis h1 {
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+
+  .thesis .container div.flex {
+    padding: 0;
+  }
+
+}

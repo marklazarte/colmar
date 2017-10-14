@@ -2,11 +2,223 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colmar Academy</title>
-    <link
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption:700|PT+Sans:400,700|PT+Serif:400i,700" rel="stylesheet">
+    <link href="resources/css/reset.css" type="text/css" rel="stylesheet">
     <link href="resources/css/style.css" type="text/css" rel="stylesheet">
+    <link rel="shortcut icon" href="resources/images/favicon.png">
   </head>
   <body>
+
+    <header class="flex bg-white"> <!-- Nav header full-width bg -->
+      <div class="flex container justify-between align-center desktop"> <!-- Contains page width -->
+        <div class="flex align-center"> <!-- Logo + name -->
+          <img src="resources/images/ic-logo.svg" alt="Home">
+          <p class="uppercase">Colmar<span>Academy</span></p>
+        </div>
+        <nav class="flex align-center justify-end small"> <!-- Nav links -->
+          <a>On campus</a>
+          <a>Online</a>
+          <a>For companies</a>
+          <a class="btn rounded">Sign in</a>
+        </nav>
+      </div>
+      <nav class="flex container justify-between align-center mobile">
+        <img src="resources/images/ic-logo.svg" alt="Home">
+        <img src="resources/images/ic-on-campus.svg" alt="On campus">
+        <img src="resources/images/ic-online.svg" alt="Online">
+        <img src="resources/images/ic-login.svg" alt="Login">
+      </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner flex bg-pale">
+      <div class="flex container align-center"> <!-- Container -->
+        <img src="resources/images/banner.jpg" class="rounded" alt="Students studying">
+        <div class="flex column"> <!-- Banner text -->
+          <h1>Learn something new every day</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a class="btn rounded small">Start here</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content + aside -->
+    <section class="info flex">
+      <div class="flex container">
+        <div class="flex column desktop"> <!-- Left column -->
+          <img src="resources/images/information-main.jpg" class="rounded" alt="Man reading book">
+          <h1>It doesn't hurt to keep practicing</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id
+            nunc ac purus aliquet tincidunt in id erat. Nulla facilisi. Maecenas
+            aliquam auctor odio.
+          </p>
+          <p>- Emanuel, Sr Strategist at Hiring.com</p>
+        </div>
+        <aside class="flex column"> <!-- Right column -->
+          <figure class="flex align-center">
+            <img src="resources/images/information-orientation.jpg" class="rounded desktop"
+            alt="Orientation">
+            <img src="resources/images/information-orientation-mobile.jpg" class="rounded mobile"
+            alt="Orientation">
+            <figcaption class="flex column">
+              <h2>Orientation dates</h2>
+              <p>Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
+              <a class="btn rounded small">Read more</a>
+            </figcaption>
+          </figure>
+          <figure class="flex align-center">
+            <img src="resources/images/information-campus.jpg" class="rounded desktop"
+            alt="Campus">
+            <img src="resources/images/information-campus-mobile.jpg" class="rounded mobile"
+            alt="Campus">
+            <figcaption class="flex column">
+              <h2>Our campus</h2>
+              <p>Find which campus is close to you</p>
+              <a class="btn rounded small">Read more</a>
+            </figcaption>
+          </figure>
+          <figure class="flex align-center bg-pale rounded">
+            <img src="resources/images/information-guest-lecture.jpg" class="rounded desktop"
+            alt="Guest lecture">
+            <img src="resources/images/information-guest-lecture-mobile.jpg" class="rounded mobile"
+            alt="Guest lecture">
+            <figcaption class="flex column">
+              <h2>Our guest lecture</h2>
+              <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+              <a class="btn rounded small">Read more</a>
+            </figcaption>
+          </figure>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Courses -->
+    <section class="courses flex bg-pale">
+      <div class="flex container column align-center">
+        <h1>Start learning</h1>
+        <div class="flex justify-between"> <!-- Courses -->
+          <figure class="flex column">
+            <img src="resources/images/course-software.jpg" class="rounded"
+            alt="Software engineering">
+            <figcaption class="flex column bg-white">
+              <h2>Software engineering</h2>
+              <a class="small">Courses</a>
+              <p>
+                Web Development, Mobile Development, iOT, APIs
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="flex column">
+            <img src="resources/images/course-computer-art.jpg" class="rounded"
+            alt="Computer art">
+            <figcaption class="flex column bg-white">
+              <h2>Computer art</h2>
+              <a class="small">Courses</a>
+              <p>
+                Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual
+                Effects, Computer Animation
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="flex column">
+            <img src="resources/images/course-design.jpg" class="rounded"
+            alt="Design">
+            <figcaption class="flex column bg-white">
+              <h2>Design</h2>
+              <a class="small">Courses</a>
+              <p>
+                User Experience Design, User Research, Visual Design
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="flex justify-between">
+          <figure class="flex column">
+            <img src="resources/images/course-data.jpg" class="rounded"
+            alt="Data">
+            <figcaption class="flex column bg-white">
+              <h2>Data</h2>
+              <a class="small">Courses</a>
+              <p>
+                Data Science, Big Data, SQL, Data Visualization
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="flex column">
+            <img src="resources/images/course-business.jpg" class="rounded"
+            alt="Business">
+            <figcaption class="flex column bg-white">
+              <h2>Business</h2>
+              <a class="small">Courses</a>
+              <p>
+                Product Development, Business Development, Startup
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="flex column">
+            <img src="resources/images/course-marketing.jpg" class="rounded"
+            alt="Marketing">
+            <figcaption class="flex column bg-white">
+              <h2>Marketing</h2>
+              <a class="small">Courses</a>
+              <p>
+                Analytics, Content Marketing, Mobile Marketing
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Thesis -->
+    <section class="thesis flex">
+      <div class="flex container column">
+        <h1>Thesis exhibit</h1>
+        <div class="flex">
+          <div class="flex column"> <!-- Left column -->
+            <video controls src="resources/videos/thesis.mp4">This video cannot
+              play on your device.</video>
+            <h2 class="desktop">Reimagine urban</h2>
+            <p class="desktop">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id
+              nunc ac purus aliquet tincidunt in id erat. Nulla facilisi. Maecenas
+              aliquam auctor odio.
+            </p>
+          </div>
+          <aside class="flex column desktop"> <!-- Right column -->
+            <figure class="flex align-center bg-pale rounded">
+              <img src="resources/images/thesis-fisma.jpg" class="rounded" alt="Fisma">
+              <figcaption class="flex column">
+                <h2>Fisma: Design &amp; Prototype</h2>
+                <p>Designer showcase of new prototype product</p>
+              </figcaption>
+            </figure>
+            <figure class="flex align-center">
+              <img src="resources/images/thesis-now-and-then.jpg" class="rounded"
+              alt="Now and then">
+              <figcaption class="flex column">
+                <h2>Now &amp; Then</h2>
+                <p>Research study about New York</p>
+              </figcaption>
+            </figure>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="flex">
+      <div class="flex container justify-between">
+        <p class="small">&copy; 2017 Colmar Academy, All rights reserved</p>
+        <nav class="flex desktop">
+          <a>Terms</a>
+          <a>Privacy</a>
+        </nav>
+      </div>
+    </footer>
 
   </body>
 </html>
